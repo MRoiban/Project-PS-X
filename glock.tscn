@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://y238lv7etlc2"]
 
 [ext_resource type="PackedScene" uid="uid://hota01p1wyma" path="res://glock_model.tscn" id="1_08bli"]
-[ext_resource type="PackedScene" uid="uid://15b3ib4motwi" path="res://Main.obj" id="2_ybseo"]
+[ext_resource type="PackedScene" uid="uid://15b3ib4motwi" path="res://Assets/3D/Main.obj" id="2_ybseo"]
 [ext_resource type="PackedScene" uid="uid://dvw1yfutne2gw" path="res://grenade.tscn" id="3_gkc7h"]
 
 [sub_resource type="Animation" id="Animation_67h2l"]
@@ -42,6 +42,7 @@ _data = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16001, 0)
 
 [node name="Model" parent="." instance=ExtResource("1_08bli")]
+visible = false
 
 [node name="Main" parent="." instance=ExtResource("2_ybseo")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.633725, 7.56785, 8.75424)
@@ -58,5 +59,4 @@ debug_shape_custom_color = Color(0, 0.431373, 0.788235, 1)
 debug_shape_thickness = 5
 
 [node name="Grenade" parent="." instance=ExtResource("3_gkc7h")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0260141, 7.87464, 2.08964)
-visible = false
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -0.0260141, 7.87464, 2.08964)
