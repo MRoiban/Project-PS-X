@@ -7,6 +7,7 @@ const EXIT = 4194305
 # WEAPONS PROPERTIES
 @export var bullet_count = 10
 @export var stock_count = 2
+@export var grenade_count = 5
 
 var GRENADE = false
 var GUN = true
@@ -152,14 +153,19 @@ func _movement(v, d, time):
 
 func grenade_throw():
 	if not grenade_model.visible:
+		GRENADE = true
+		GUN = false
 		gun_model.visible = false
-		grenade_model = true
+		grenade_model.visible = true
+	reload_immersive()
 
 
 func shooting():
 	if not gun_model.visible:
-		grenade_model = false
+		grenade_model.visible = false
 		gun_model.visible = true
+		GRENADE = false
+		GUN = true
 
 	reload_immersive()
 	gun_stats_bullets.text = str(bullet_count)
@@ -184,9 +190,13 @@ func add_ammo(number):
 
 func reload_immersive():
 	if Input.is_action_just_pressed("Reload"):
-		if stock_count > 0:
-			stock_count -= 1
-			bullet_count = 10
+		if GUN:
+			if stock_count > 0:
+				stock_count -= 1
+				bullet_count = 10
+		elif GRENADE:
+
+			
 
 
 func direction_vector() -> Vector3:
