@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://c2jy7pamgkqyj"]
-
-[node name="Map" type="TBLoader"]
-map_resource = "res://Maps/prototype-level-001.map"
-texture_path = "res://Assets/textures"
