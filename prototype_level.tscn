@@ -1,10 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://b53ib5a3nn2a0"]
+[gd_scene load_steps=11 format=3 uid="uid://b53ib5a3nn2a0"]
 
 [ext_resource type="Texture2D" uid="uid://bxl2lemntydbf" path="res://Assets/textures/prototype/texture_01.png" id="1_ba0bk"]
 [ext_resource type="PackedScene" uid="uid://dw6ciidcrpv3b" path="res://entities/item.tscn" id="2_u7ygc"]
-[ext_resource type="Script" path="res://physics_ball.gd" id="3_5v2q1"]
 [ext_resource type="PackedScene" uid="uid://v5fq1b5oo5us" path="res://entities/custom_light.tscn" id="4_fklk2"]
-[ext_resource type="Script" path="res://entities/custom_light.gd" id="5_jh3rg"]
 [ext_resource type="PackedScene" uid="uid://ubebjoufha5s" path="res://player.tscn" id="6_y301f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_eu4ok"]
@@ -18,7 +16,10 @@ sky_material = SubResource("ProceduralSkyMaterial_eu4ok")
 background_mode = 2
 sky = SubResource("Sky_cljqj")
 tonemap_mode = 2
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
 glow_enabled = true
+fog_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_335b4"]
 albedo_texture = ExtResource("1_ba0bk")
@@ -63,58 +64,35 @@ mesh = SubResource("ArrayMesh_cow4j")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TBLoader/Default Layer/entity_0_geometry_col"]
 shape = SubResource("ConcavePolygonShape3D_gpmvx")
 
-[node name="Item" type="Node3D" parent="TBLoader" instance=ExtResource("2_u7ygc")]
+[node name="Item" parent="TBLoader" instance=ExtResource("2_u7ygc")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.5, 1.5, 49.5)
-script = ExtResource("3_5v2q1")
 item_path = "res://item_001.tscn"
 
-[node name="@Node3D@19697" type="Node3D" parent="TBLoader" instance=ExtResource("2_u7ygc")]
+[node name="@Node3D@19697" parent="TBLoader" instance=ExtResource("2_u7ygc")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.5, 1.5, 49.5)
-script = ExtResource("3_5v2q1")
 item_path = "res://item_001.tscn"
 
-[node name="@Node3D@19698" type="Node3D" parent="TBLoader" instance=ExtResource("2_u7ygc")]
+[node name="@Node3D@19698" parent="TBLoader" instance=ExtResource("2_u7ygc")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.5, 1.5, 51.5)
-script = ExtResource("3_5v2q1")
 item_path = "res://item_001.tscn"
 
-[node name="Light" type="OmniLight3D" parent="TBLoader" instance=ExtResource("4_fklk2")]
+[node name="Light" parent="TBLoader" instance=ExtResource("4_fklk2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.5, 4.5, 53.5)
-light_energy = 5.0
-light_size = 1.0
-light_bake_mode = 1
-omni_range = 10.0
-script = ExtResource("5_jh3rg")
 energy = 5.0
 size = 10.0
 
-[node name="@OmniLight3D@19699" type="OmniLight3D" parent="TBLoader" instance=ExtResource("4_fklk2")]
+[node name="@OmniLight3D@19699" parent="TBLoader" instance=ExtResource("4_fklk2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 28.5, 4.5, 54.5)
-light_energy = 5.0
-light_size = 1.0
-light_bake_mode = 1
-omni_range = 10.0
-script = ExtResource("5_jh3rg")
 energy = 10.0
 size = 5.0
 
-[node name="@OmniLight3D@19700" type="OmniLight3D" parent="TBLoader" instance=ExtResource("4_fklk2")]
+[node name="@OmniLight3D@19700" parent="TBLoader" instance=ExtResource("4_fklk2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 37.5, 4.5, 54.5)
-light_energy = 5.0
-light_size = 1.0
-light_bake_mode = 1
-omni_range = 10.0
-script = ExtResource("5_jh3rg")
 energy = 10.0
 size = 5.0
 
-[node name="@OmniLight3D@19701" type="OmniLight3D" parent="TBLoader" instance=ExtResource("4_fklk2")]
+[node name="@OmniLight3D@19701" parent="TBLoader" instance=ExtResource("4_fklk2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 49.5, 4.5, 54.5)
-light_energy = 5.0
-light_size = 1.0
-light_bake_mode = 1
-omni_range = 10.0
-script = ExtResource("5_jh3rg")
 energy = 10.0
 size = 5.0
 
