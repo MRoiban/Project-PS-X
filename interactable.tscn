@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbo6itd8ou0ck"]
+
+[ext_resource type="Script" path="res://Button.gd" id="1_sd8by"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m2trj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rkjji"]
+
+[node name="Button" type="StaticBody3D"]
+collision_layer = 2
+script = ExtResource("1_sd8by")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_m2trj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_rkjji")
+skeleton = NodePath("../CollisionShape3D")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+
+.vscode
+Assets/Medieval Assets
+Assets
+DemoProject
+Media
+addons
+ammo_box_remington_xleanbore_45_acp
+Tower
+fonts

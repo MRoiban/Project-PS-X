@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://v5fq1b5oo5us"]
+
+[ext_resource type="Script" path="res://entities/custom_light.gd" id="1_c6qso"]
+
+[node name="Light" type="OmniLight3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.5, 5.5, 53.5)
+light_energy = 5.0
+light_size = 1.0
+light_bake_mode = 1
+omni_range = 10.0
+script = ExtResource("1_c6qso")

@@ -1,0 +1,104 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0ahr7hal8hq3"]
+
+[ext_resource type="FontFile" uid="uid://curchivhtuiqb" path="res://fonts/firacode/iracode_regular.ttf" id="1_p2q20"]
+[ext_resource type="Texture2D" uid="uid://ptekm070smmn" path="res://ammo_box_remington_xleanbore_45_acp/image_139.png" id="2_anu2r"]
+[ext_resource type="Texture2D" uid="uid://clj0aku422wey" path="res://Pain+Hud-605601482.png" id="3_7w772"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kxk4d"]
+font = ExtResource("1_p2q20")
+font_size = 50
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5ys6r"]
+blend_mode = 1
+
+[sub_resource type="FontVariation" id="FontVariation_oe428"]
+base_font = ExtResource("1_p2q20")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = 24.0
+offset_right = 21.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Gun_Stats" type="HBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = -110.0
+offset_right = 167.0
+offset_bottom = -38.0
+grow_vertical = 0
+
+[node name="Stock" type="Label" parent="Gun_Stats"]
+layout_mode = 2
+text = "0
+"
+label_settings = SubResource("LabelSettings_kxk4d")
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Separator" type="Label" parent="Gun_Stats"]
+layout_mode = 2
+text = "  
+"
+label_settings = SubResource("LabelSettings_kxk4d")
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Image139" type="Sprite2D" parent="Gun_Stats/Separator"]
+material = SubResource("CanvasItemMaterial_5ys6r")
+position = Vector2(15, 27)
+rotation = 1.5708
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_anu2r")
+
+[node name="Bullets" type="Label" parent="Gun_Stats"]
+layout_mode = 2
+text = "00
+"
+label_settings = SubResource("LabelSettings_kxk4d")
+horizontal_alignment = 2
+metadata/_edit_lock_ = true
+
+[node name="Blood" type="TextureRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.466667)
+layout_mode = 0
+offset_left = -52.0
+offset_top = -36.0
+offset_right = 1269.0
+offset_bottom = 670.0
+texture = ExtResource("3_7w772")
+expand_mode = 3
+
+[node name="InteractionLabel" type="Label" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = -50.0
+offset_right = 555.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = SubResource("FontVariation_oe428")
+theme_override_font_sizes/font_size = 72
+text = "Press E to Interact"
+horizontal_alignment = 1
+vertical_alignment = 1

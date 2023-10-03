@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://f4w64qtnr4nn"]
+
+[ext_resource type="Script" path="res://start_screen.gd" id="1_m6s36"]
+[ext_resource type="Script" path="res://addons/GameGUI/GGHBox.gd" id="2_foeoi"]
+[ext_resource type="Script" path="res://addons/GameGUI/GGVBox.gd" id="3_du7q8"]
+[ext_resource type="Script" path="res://addons/GameGUI/GGLabel.gd" id="4_07sr3"]
+
+[node name="Start-Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m6s36")
+
+[node name="Grid" type="Container" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 653.0
+script = ExtResource("2_foeoi")
+
+[node name="col1" type="Container" parent="Grid"]
+layout_mode = 2
+script = ExtResource("3_du7q8")
+
+[node name="GGLabel" type="Label" parent="Grid/col1" node_paths=PackedStringArray("reference_node")]
+layout_mode = 2
+text = "Label"
+script = ExtResource("4_07sr3")
+reference_node = NodePath("..")
+reference_font_size = 10
+horizontal_mode = 1
+vertical_mode = 2
+layout_size = Vector2(0, 29)
+is_configured = true
+
+[node name="col2" type="Container" parent="Grid"]
+layout_mode = 2
+script = ExtResource("3_du7q8")

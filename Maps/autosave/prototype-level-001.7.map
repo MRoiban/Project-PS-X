@@ -1,0 +1,496 @@
+// Game: Project-PSX
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures;textures/prototype"
+"_tb_def" "external:D:/A R C A D E/Tools/Trenchbroom/games/Project-PSX/Qodot.fgd"
+// brush 0
+{
+( -64 -64 -16 ) ( -64 -63 -16 ) ( -64 -64 -15 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 -64 -16 ) ( -64 -64 -15 ) ( -63 -64 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 -64 -16 ) ( -63 -64 -16 ) ( -64 -63 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 16 ) ( 64 65 16 ) ( 65 64 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 16 ) ( 65 64 16 ) ( 64 64 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 16 ) ( 64 64 17 ) ( 64 65 16 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 1
+{
+( -16 -32 16 ) ( -16 -31 16 ) ( -16 -32 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( -16 -32 16 ) ( -16 -32 17 ) ( -15 -32 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -16 -32 16 ) ( -15 -32 16 ) ( -16 -31 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 32 ) ( 64 65 32 ) ( 65 64 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 32 ) ( 65 64 32 ) ( 64 64 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 64 32 ) ( 64 64 33 ) ( 64 65 32 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 2
+{
+( -16 -64 16 ) ( -16 -63 16 ) ( -16 -64 17 ) prototype/texture_01 0 0 0 0.1 0.1
+( -16 -64 16 ) ( -16 -64 17 ) ( -15 -64 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( -16 -64 16 ) ( -15 -64 16 ) ( -16 -63 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -32 32 ) ( 64 -31 32 ) ( 65 -32 32 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -32 32 ) ( 65 -32 32 ) ( 64 -32 33 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -32 32 ) ( 64 -32 33 ) ( 64 -31 32 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 3
+{
+( -64 -128 -16 ) ( -64 -127 -16 ) ( -64 -128 -15 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 -128 -16 ) ( -64 -128 -15 ) ( -63 -128 -16 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 -128 -16 ) ( -63 -128 -16 ) ( -64 -127 -16 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 0 ) ( 64 -63 0 ) ( 65 -64 0 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 0 ) ( 65 -64 0 ) ( 64 -64 1 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 0 ) ( 64 -64 1 ) ( 64 -63 0 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 4
+{
+( -160 -128 -16 ) ( -160 -127 -16 ) ( -160 -128 -15 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 -128 -16 ) ( -160 -128 -15 ) ( -159 -128 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 -128 -16 ) ( -159 -128 -16 ) ( -160 -127 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 0 ) ( -64 65 0 ) ( -63 64 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 0 ) ( -63 64 0 ) ( -64 64 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 0 ) ( -64 64 1 ) ( -64 65 0 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 5
+{
+( -64 -128 0 ) ( -64 -127 0 ) ( -64 -128 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 -128 0 ) ( -64 -128 1 ) ( -63 -128 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 -128 0 ) ( -63 -128 0 ) ( -64 -127 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -64 16 ) ( 64 -63 16 ) ( 65 -64 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -64 16 ) ( 65 -64 16 ) ( 64 -64 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -64 16 ) ( 64 -64 17 ) ( 64 -63 16 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 6
+{
+( -16 -128 16 ) ( -16 -127 16 ) ( -16 -128 17 ) prototype/texture_01 0 0 0 0.1 0.1
+( -16 -128 16 ) ( -16 -128 17 ) ( -15 -128 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( -16 -128 16 ) ( -15 -128 16 ) ( -16 -127 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 32 ) ( 64 -63 32 ) ( 65 -64 32 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 32 ) ( 65 -64 32 ) ( 64 -64 33 ) prototype/texture_01 0 0 0 0.1 0.1
+( 64 -64 32 ) ( 64 -64 33 ) ( 64 -63 32 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 7
+{
+( -160 48 0 ) ( -160 49 0 ) ( -160 48 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 48 0 ) ( -160 48 1 ) ( -159 48 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 48 0 ) ( -159 48 0 ) ( -160 49 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 16 ) ( -64 65 16 ) ( -63 64 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 16 ) ( -63 64 16 ) ( -64 64 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 16 ) ( -64 64 17 ) ( -64 65 16 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 8
+{
+( -160 48 16 ) ( -160 49 16 ) ( -160 48 17 ) prototype/texture_01 0 0 0 0.1 0.1
+( -160 48 16 ) ( -160 48 17 ) ( -159 48 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( -160 48 16 ) ( -159 48 16 ) ( -160 49 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 64 32 ) ( -64 65 32 ) ( -63 64 32 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 64 32 ) ( -63 64 32 ) ( -64 64 33 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 64 32 ) ( -64 64 33 ) ( -64 65 32 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 9
+{
+( -160 48 32 ) ( -160 49 32 ) ( -160 48 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 48 32 ) ( -160 48 33 ) ( -159 48 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 48 32 ) ( -159 48 32 ) ( -160 49 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 48 ) ( -64 65 48 ) ( -63 64 48 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 48 ) ( -63 64 48 ) ( -64 64 49 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 64 48 ) ( -64 64 49 ) ( -64 65 48 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 10
+{
+( -256 48 16 ) ( -256 49 16 ) ( -256 48 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 16 ) ( -256 48 17 ) ( -255 48 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 16 ) ( -255 48 16 ) ( -256 49 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 32 ) ( -160 65 32 ) ( -159 64 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 32 ) ( -159 64 32 ) ( -160 64 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 32 ) ( -160 64 33 ) ( -160 65 32 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 11
+{
+( -256 48 32 ) ( -256 49 32 ) ( -256 48 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 32 ) ( -256 48 33 ) ( -255 48 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 32 ) ( -255 48 32 ) ( -256 49 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 48 ) ( -160 65 48 ) ( -159 64 48 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 48 ) ( -159 64 48 ) ( -160 64 49 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 48 ) ( -160 64 49 ) ( -160 65 48 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 12
+{
+( -256 48 0 ) ( -256 49 0 ) ( -256 48 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 0 ) ( -256 48 1 ) ( -255 48 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 48 0 ) ( -255 48 0 ) ( -256 49 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 16 ) ( -160 65 16 ) ( -159 64 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 16 ) ( -159 64 16 ) ( -160 64 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 16 ) ( -160 64 17 ) ( -160 65 16 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 13
+{
+( 32 48 0 ) ( 32 49 0 ) ( 32 48 1 ) prototype/texture_01 0 0 0 0.1 0.1
+( 32 48 0 ) ( 32 48 1 ) ( 33 48 0 ) prototype/texture_01 0 0 0 0.1 0.1
+( 32 48 0 ) ( 33 48 0 ) ( 32 49 0 ) prototype/texture_01 0 0 0 0.1 0.1
+( 128 64 16 ) ( 128 65 16 ) ( 129 64 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( 128 64 16 ) ( 129 64 16 ) ( 128 64 17 ) prototype/texture_01 0 0 0 0.1 0.1
+( 128 64 16 ) ( 128 64 17 ) ( 128 65 16 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 14
+{
+( 32 48 16 ) ( 32 49 16 ) ( 32 48 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 48 16 ) ( 32 48 17 ) ( 33 48 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 48 16 ) ( 33 48 16 ) ( 32 49 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 32 ) ( 128 65 32 ) ( 129 64 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 32 ) ( 129 64 32 ) ( 128 64 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 32 ) ( 128 64 33 ) ( 128 65 32 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 15
+{
+( 32 48 32 ) ( 32 49 32 ) ( 32 48 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 48 32 ) ( 32 48 33 ) ( 33 48 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 48 32 ) ( 33 48 32 ) ( 32 49 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 48 ) ( 128 65 48 ) ( 129 64 48 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 48 ) ( 129 64 48 ) ( 128 64 49 ) prototype/texture_01 0 0 0 0.2 0.2
+( 128 64 48 ) ( 128 64 49 ) ( 128 65 48 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 16
+{
+( -64 48 0 ) ( -64 49 0 ) ( -64 48 1 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 48 0 ) ( -64 48 1 ) ( -63 48 0 ) prototype/texture_01 0 0 0 0.1 0.1
+( -64 48 0 ) ( -63 48 0 ) ( -64 49 0 ) prototype/texture_01 0 0 0 0.1 0.1
+( 32 64 16 ) ( 32 65 16 ) ( 33 64 16 ) prototype/texture_01 0 0 0 0.1 0.1
+( 32 64 16 ) ( 33 64 16 ) ( 32 64 17 ) prototype/texture_01 0 0 0 0.1 0.1
+( 32 64 16 ) ( 32 64 17 ) ( 32 65 16 ) prototype/texture_01 0 0 0 0.1 0.1
+}
+// brush 17
+{
+( -64 48 16 ) ( -64 49 16 ) ( -64 48 17 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 48 16 ) ( -64 48 17 ) ( -63 48 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 48 16 ) ( -63 48 16 ) ( -64 49 16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 32 ) ( 32 65 32 ) ( 33 64 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 32 ) ( 33 64 32 ) ( 32 64 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 32 ) ( 32 64 33 ) ( 32 65 32 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 18
+{
+( -64 48 32 ) ( -64 49 32 ) ( -64 48 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 48 32 ) ( -64 48 33 ) ( -63 48 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( -64 48 32 ) ( -63 48 32 ) ( -64 49 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 48 ) ( 32 65 48 ) ( 33 64 48 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 48 ) ( 33 64 48 ) ( 32 64 49 ) prototype/texture_01 0 0 0 0.2 0.2
+( 32 64 48 ) ( 32 64 49 ) ( 32 65 48 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 19
+{
+( -256 -128 -16 ) ( -256 -127 -16 ) ( -256 -128 -15 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 -128 -16 ) ( -256 -128 -15 ) ( -255 -128 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 -128 -16 ) ( -255 -128 -16 ) ( -256 -127 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 0 ) ( -160 65 0 ) ( -159 64 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 0 ) ( -159 64 0 ) ( -160 64 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -160 64 0 ) ( -160 64 1 ) ( -160 65 0 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 20
+{
+( 64 -128 32 ) ( 64 -127 32 ) ( 64 -128 33 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -128 32 ) ( 64 -128 33 ) ( 65 -128 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -128 32 ) ( 65 -128 32 ) ( 64 -127 32 ) prototype/texture_01 0 0 0 0.2 0.2
+( 80 48 48 ) ( 80 49 48 ) ( 81 48 48 ) prototype/texture_01 0 0 0 0.2 0.2
+( 80 48 48 ) ( 81 48 48 ) ( 80 48 49 ) prototype/texture_01 0 0 0 0.2 0.2
+( 80 48 48 ) ( 80 48 49 ) ( 80 49 48 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 21
+{
+( -256 -832 -16 ) ( -256 -831 -16 ) ( -256 -832 -15 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 -832 -16 ) ( -256 -832 -15 ) ( -255 -832 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 -832 -16 ) ( -255 -832 -16 ) ( -256 -831 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -128 0 ) ( 64 -127 0 ) ( 65 -128 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -128 0 ) ( 65 -128 0 ) ( 64 -128 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( 64 -128 0 ) ( 64 -128 1 ) ( 64 -127 0 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 22
+{
+( -784 -832 -16 ) ( -784 -831 -16 ) ( -784 -832 -15 ) prototype/texture_01 0 0 0 0.2 0.2
+( -784 -832 -16 ) ( -784 -832 -15 ) ( -783 -832 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -784 -832 -16 ) ( -783 -832 -16 ) ( -784 -831 -16 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 64 0 ) ( -256 65 0 ) ( -255 64 0 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 64 0 ) ( -255 64 0 ) ( -256 64 1 ) prototype/texture_01 0 0 0 0.2 0.2
+( -256 64 0 ) ( -256 64 1 ) ( -256 65 0 ) prototype/texture_01 0 0 0 0.2 0.2
+}
+// brush 23
+{
+( -272 -416 0 ) ( -272 -415 0 ) ( -272 -416 1 ) battlement_cobblestone 0 0 0 1 1
+( -272 -416 0 ) ( -272 -416 1 ) ( -271 -416 0 ) battlement_cobblestone 0 0 0 1 1
+( -272 -416 0 ) ( -271 -416 0 ) ( -272 -415 0 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 96 ) ( -256 -399 96 ) ( -255 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 96 ) ( -255 -400 96 ) ( -256 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 96 ) ( -256 -400 97 ) ( -256 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 24
+{
+( -400 -432 0 ) ( -400 -431 0 ) ( -400 -432 1 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 0 ) ( -400 -432 1 ) ( -399 -432 0 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 0 ) ( -399 -432 0 ) ( -400 -431 0 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 96 ) ( -384 -399 96 ) ( -383 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 96 ) ( -383 -400 96 ) ( -384 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 96 ) ( -384 -400 97 ) ( -384 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 25
+{
+( -336 -416 0 ) ( -336 -415 0 ) ( -336 -416 1 ) battlement_cobblestone 0 0 0 1 1
+( -336 -416 0 ) ( -336 -416 1 ) ( -335 -416 0 ) battlement_cobblestone 0 0 0 1 1
+( -336 -416 0 ) ( -335 -416 0 ) ( -336 -415 0 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 96 ) ( -320 -399 96 ) ( -319 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 96 ) ( -319 -400 96 ) ( -320 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 96 ) ( -320 -400 97 ) ( -320 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 26
+{
+( -384 -416 0 ) ( -384 -415 0 ) ( -384 -416 1 ) battlement_cobblestone 0 0 0 1 1
+( -384 -416 0 ) ( -384 -416 1 ) ( -383 -416 0 ) battlement_cobblestone 0 0 0 1 1
+( -384 -416 0 ) ( -383 -416 0 ) ( -384 -415 0 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 16 ) ( -272 -399 16 ) ( -271 -400 16 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 16 ) ( -271 -400 16 ) ( -272 -400 17 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 16 ) ( -272 -400 17 ) ( -272 -399 16 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 27
+{
+( -320 -416 80 ) ( -320 -415 80 ) ( -320 -416 81 ) battlement_cobblestone 0 0 0 1 1
+( -320 -416 80 ) ( -320 -416 81 ) ( -319 -416 80 ) battlement_cobblestone 0 0 0 1 1
+( -320 -416 80 ) ( -319 -416 80 ) ( -320 -415 80 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 96 ) ( -272 -399 96 ) ( -271 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 96 ) ( -271 -400 96 ) ( -272 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -272 -400 96 ) ( -272 -400 97 ) ( -272 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 28
+{
+( -384 -416 80 ) ( -384 -415 80 ) ( -384 -416 81 ) battlement_cobblestone 0 0 0 1 1
+( -384 -416 80 ) ( -384 -416 81 ) ( -383 -416 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -416 80 ) ( -383 -416 80 ) ( -384 -415 80 ) battlement_cobblestone 0 0 0 1 1
+( -336 -400 96 ) ( -336 -399 96 ) ( -335 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -336 -400 96 ) ( -335 -400 96 ) ( -336 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -336 -400 96 ) ( -336 -400 97 ) ( -336 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 29
+{
+( -272 -416 96 ) ( -272 -415 96 ) ( -272 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -272 -416 96 ) ( -272 -416 97 ) ( -271 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -272 -416 96 ) ( -271 -416 96 ) ( -272 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 112 ) ( -256 -399 112 ) ( -255 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 112 ) ( -255 -400 112 ) ( -256 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -256 -400 112 ) ( -256 -400 113 ) ( -256 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 30
+{
+( -304 -416 96 ) ( -304 -415 96 ) ( -304 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -304 -416 96 ) ( -304 -416 97 ) ( -303 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -304 -416 96 ) ( -303 -416 96 ) ( -304 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -288 -400 112 ) ( -288 -399 112 ) ( -287 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -288 -400 112 ) ( -287 -400 112 ) ( -288 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -288 -400 112 ) ( -288 -400 113 ) ( -288 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 31
+{
+( -336 -416 96 ) ( -336 -415 96 ) ( -336 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -336 -416 96 ) ( -336 -416 97 ) ( -335 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -336 -416 96 ) ( -335 -416 96 ) ( -336 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 112 ) ( -320 -399 112 ) ( -319 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 112 ) ( -319 -400 112 ) ( -320 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -320 -400 112 ) ( -320 -400 113 ) ( -320 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 32
+{
+( -368 -416 96 ) ( -368 -415 96 ) ( -368 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -368 -416 96 ) ( -368 -416 97 ) ( -367 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -368 -416 96 ) ( -367 -416 96 ) ( -368 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -352 -400 112 ) ( -352 -399 112 ) ( -351 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -352 -400 112 ) ( -351 -400 112 ) ( -352 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -352 -400 112 ) ( -352 -400 113 ) ( -352 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 33
+{
+( -400 -416 96 ) ( -400 -415 96 ) ( -400 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -400 -416 96 ) ( -400 -416 97 ) ( -399 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -400 -416 96 ) ( -399 -416 96 ) ( -400 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 112 ) ( -384 -399 112 ) ( -383 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 112 ) ( -383 -400 112 ) ( -384 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 112 ) ( -384 -400 113 ) ( -384 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 34
+{
+( -448 -416 64 ) ( -448 -415 64 ) ( -448 -416 65 ) battlement_cobblestone 0 0 0 1 1
+( -448 -416 64 ) ( -448 -416 65 ) ( -447 -416 64 ) battlement_cobblestone 0 0 0 1 1
+( -448 -416 64 ) ( -447 -416 64 ) ( -448 -415 64 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 80 ) ( -400 -399 80 ) ( -399 -400 80 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 80 ) ( -399 -400 80 ) ( -400 -400 81 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 80 ) ( -400 -400 81 ) ( -400 -399 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 35
+{
+( -608 -432 0 ) ( -608 -431 0 ) ( -608 -432 1 ) battlement_cobblestone 0 0 0 1 1
+( -608 -432 0 ) ( -608 -432 1 ) ( -607 -432 0 ) battlement_cobblestone 0 0 0 1 1
+( -608 -432 0 ) ( -607 -432 0 ) ( -608 -431 0 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 80 ) ( -448 -399 80 ) ( -447 -400 80 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 80 ) ( -447 -400 80 ) ( -448 -400 81 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 80 ) ( -448 -400 81 ) ( -448 -399 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 36
+{
+( -608 -464 80 ) ( -608 -463 80 ) ( -608 -464 81 ) battlement_cobblestone 0 0 0 1 1
+( -608 -464 80 ) ( -608 -464 81 ) ( -607 -464 80 ) battlement_cobblestone 0 0 0 1 1
+( -608 -464 80 ) ( -607 -464 80 ) ( -608 -463 80 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 96 ) ( -400 -399 96 ) ( -399 -400 96 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 96 ) ( -399 -400 96 ) ( -400 -400 97 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 96 ) ( -400 -400 97 ) ( -400 -399 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 37
+{
+( -432 -416 96 ) ( -432 -415 96 ) ( -432 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -432 -416 96 ) ( -432 -416 97 ) ( -431 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -432 -416 96 ) ( -431 -416 96 ) ( -432 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -416 -400 112 ) ( -416 -399 112 ) ( -415 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -416 -400 112 ) ( -415 -400 112 ) ( -416 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -416 -400 112 ) ( -416 -400 113 ) ( -416 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 38
+{
+( -464 -416 96 ) ( -464 -415 96 ) ( -464 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -464 -416 96 ) ( -464 -416 97 ) ( -463 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -464 -416 96 ) ( -463 -416 96 ) ( -464 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 112 ) ( -448 -399 112 ) ( -447 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 112 ) ( -447 -400 112 ) ( -448 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 112 ) ( -448 -400 113 ) ( -448 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 39
+{
+( -496 -416 96 ) ( -496 -415 96 ) ( -496 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -496 -416 96 ) ( -496 -416 97 ) ( -495 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -496 -416 96 ) ( -495 -416 96 ) ( -496 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -480 -400 112 ) ( -480 -399 112 ) ( -479 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -480 -400 112 ) ( -479 -400 112 ) ( -480 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -480 -400 112 ) ( -480 -400 113 ) ( -480 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 40
+{
+( -528 -416 96 ) ( -528 -415 96 ) ( -528 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -528 -416 96 ) ( -528 -416 97 ) ( -527 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -528 -416 96 ) ( -527 -416 96 ) ( -528 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -512 -400 112 ) ( -512 -399 112 ) ( -511 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -512 -400 112 ) ( -511 -400 112 ) ( -512 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -512 -400 112 ) ( -512 -400 113 ) ( -512 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 41
+{
+( -560 -416 96 ) ( -560 -415 96 ) ( -560 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -560 -416 96 ) ( -560 -416 97 ) ( -559 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -560 -416 96 ) ( -559 -416 96 ) ( -560 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -544 -400 112 ) ( -544 -399 112 ) ( -543 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -544 -400 112 ) ( -543 -400 112 ) ( -544 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -544 -400 112 ) ( -544 -400 113 ) ( -544 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 42
+{
+( -592 -416 96 ) ( -592 -415 96 ) ( -592 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -592 -416 96 ) ( -592 -416 97 ) ( -591 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -592 -416 96 ) ( -591 -416 96 ) ( -592 -415 96 ) battlement_cobblestone 0 0 0 1 1
+( -576 -400 112 ) ( -576 -399 112 ) ( -575 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -576 -400 112 ) ( -575 -400 112 ) ( -576 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -576 -400 112 ) ( -576 -400 113 ) ( -576 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 43
+{
+( -624 -416 0 ) ( -624 -415 0 ) ( -624 -416 1 ) battlement_cobblestone 0 0 0 1 1
+( -624 -416 0 ) ( -624 -416 1 ) ( -623 -416 0 ) battlement_cobblestone 0 0 0 1 1
+( -624 -416 0 ) ( -623 -416 0 ) ( -624 -415 0 ) battlement_cobblestone 0 0 0 1 1
+( -608 -400 112 ) ( -608 -399 112 ) ( -607 -400 112 ) battlement_cobblestone 0 0 0 1 1
+( -608 -400 112 ) ( -607 -400 112 ) ( -608 -400 113 ) battlement_cobblestone 0 0 0 1 1
+( -608 -400 112 ) ( -608 -400 113 ) ( -608 -399 112 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 44
+{
+( -384 -464 80 ) ( -384 -463 80 ) ( -384 -464 81 ) battlement_cobblestone 0 0 0 1 1
+( -384 -464 80 ) ( -384 -464 81 ) ( -383 -464 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -464 80 ) ( -383 -464 80 ) ( -384 -463 80 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 96 ) ( -256 -415 96 ) ( -255 -416 96 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 96 ) ( -255 -416 96 ) ( -256 -416 97 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 96 ) ( -256 -416 97 ) ( -256 -415 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 45
+{
+( -400 -464 80 ) ( -400 -463 80 ) ( -400 -464 81 ) battlement_cobblestone 0 0 0 1 1
+( -400 -464 80 ) ( -400 -464 81 ) ( -399 -464 80 ) battlement_cobblestone 0 0 0 1 1
+( -400 -464 80 ) ( -399 -464 80 ) ( -400 -463 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 96 ) ( -384 -431 96 ) ( -383 -432 96 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 96 ) ( -383 -432 96 ) ( -384 -432 97 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 96 ) ( -384 -432 97 ) ( -384 -431 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 46
+{
+( -608 -592 80 ) ( -608 -591 80 ) ( -608 -592 81 ) battlement_cobblestone 0 0 0 1 1
+( -608 -592 80 ) ( -608 -592 81 ) ( -607 -592 80 ) battlement_cobblestone 0 0 0 1 1
+( -608 -592 80 ) ( -607 -592 80 ) ( -608 -591 80 ) battlement_cobblestone 0 0 0 1 1
+( -256 -464 96 ) ( -256 -463 96 ) ( -255 -464 96 ) battlement_cobblestone 0 0 0 1 1
+( -256 -464 96 ) ( -255 -464 96 ) ( -256 -464 97 ) battlement_cobblestone 0 0 0 1 1
+( -256 -464 96 ) ( -256 -464 97 ) ( -256 -463 96 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 47
+{
+( -400 -432 64 ) ( -400 -431 64 ) ( -400 -432 65 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 64 ) ( -400 -432 65 ) ( -399 -432 64 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 64 ) ( -399 -432 64 ) ( -400 -431 64 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -384 -399 80 ) ( -383 -400 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -383 -400 80 ) ( -384 -400 81 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -384 -400 81 ) ( -384 -399 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 48
+{
+( -400 -432 0 ) ( -400 -431 0 ) ( -400 -432 1 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 0 ) ( -400 -432 1 ) ( -399 -432 0 ) battlement_cobblestone 0 0 0 1 1
+( -400 -432 0 ) ( -399 -432 0 ) ( -400 -431 0 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -384 -399 80 ) ( -383 -400 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -383 -400 80 ) ( -384 -400 81 ) battlement_cobblestone 0 0 0 1 1
+( -384 -400 80 ) ( -384 -400 81 ) ( -384 -399 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 49
+{
+( -400 -640 0 ) ( -400 -639 0 ) ( -400 -640 1 ) battlement_cobblestone 0 0 0 1 1
+( -400 -640 0 ) ( -400 -640 1 ) ( -399 -640 0 ) battlement_cobblestone 0 0 0 1 1
+( -400 -640 0 ) ( -399 -640 0 ) ( -400 -639 0 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 80 ) ( -384 -431 80 ) ( -383 -432 80 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 80 ) ( -383 -432 80 ) ( -384 -432 81 ) battlement_cobblestone 0 0 0 1 1
+( -384 -432 80 ) ( -384 -432 81 ) ( -384 -431 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 50
+{
+( -272 -624 0 ) ( -272 -623 0 ) ( -272 -624 1 ) battlement_cobblestone 0 0 0 1 1
+( -272 -624 0 ) ( -272 -624 1 ) ( -271 -624 0 ) battlement_cobblestone 0 0 0 1 1
+( -272 -624 0 ) ( -271 -624 0 ) ( -272 -623 0 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 80 ) ( -256 -415 80 ) ( -255 -416 80 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 80 ) ( -255 -416 80 ) ( -256 -416 81 ) battlement_cobblestone 0 0 0 1 1
+( -256 -416 80 ) ( -256 -416 81 ) ( -256 -415 80 ) battlement_cobblestone 0 0 0 1 1
+}
+// brush 51
+{
+( -400 -416 48 ) ( -400 -400 48 ) ( -416 -400 64 ) battlement_cobblestone 8 -24 0 1 1
+( -400 -416 64 ) ( -384 -416 48 ) ( -400 -416 48 ) battlement_cobblestone 0 0 0 1 1
+( -384 -416 48 ) ( -384 -400 48 ) ( -400 -400 48 ) battlement_cobblestone 0 0 0 1 1
+( -416 -400 64 ) ( -400 -400 64 ) ( -400 -416 64 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 48 ) ( -384 -400 48 ) ( -400 -400 64 ) battlement_cobblestone 0 0 0 1 1
+( -400 -400 64 ) ( -384 -400 48 ) ( -384 -416 48 ) battlement_cobblestone -8 -24 0 1 1
+}
+// brush 52
+{
+( -464 -400 48 ) ( -448 -400 64 ) ( -448 -416 64 ) battlement_cobblestone 40 -24 0 1 1
+( -448 -416 64 ) ( -432 -416 64 ) ( -448 -416 48 ) battlement_cobblestone 0 0 0 1 1
+( -448 -416 48 ) ( -448 -400 48 ) ( -464 -400 48 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 64 ) ( -432 -400 64 ) ( -432 -416 64 ) battlement_cobblestone 0 0 0 1 1
+( -448 -400 48 ) ( -432 -400 64 ) ( -448 -400 64 ) battlement_cobblestone 0 0 0 1 1
+( -432 -416 64 ) ( -432 -400 64 ) ( -448 -400 48 ) battlement_cobblestone 24 -24 0 1 1
+}
+}
+// entity 1
+{
+"classname" "item"
+"origin" "-424 -384 8"
+"item_path" "res://item_001.tscn!"
+}
+// entity 2
+{
+"classname" "item"
+"origin" "-296 -440 104"
+}

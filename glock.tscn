@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://y238lv7etlc2"]
+
+[ext_resource type="PackedScene" uid="uid://hota01p1wyma" path="res://glock_model.tscn" id="1_08bli"]
+[ext_resource type="PackedScene" uid="uid://15b3ib4motwi" path="res://Main.obj" id="2_ybseo"]
+[ext_resource type="PackedScene" uid="uid://dvw1yfutne2gw" path="res://grenade.tscn" id="3_gkc7h"]
+
+[sub_resource type="Animation" id="Animation_67h2l"]
+resource_name = "shooting"
+length = 0.1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Model:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, -1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Main:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.633725, 7.56785, 8.75424), Vector3(0.633725, 7.56785, 8.75424), Vector3(0.634, 7.568, 7.754)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kk4fx"]
+_data = {
+"shooting": SubResource("Animation_67h2l")
+}
+
+[node name="Glock" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16001, 0)
+
+[node name="Model" parent="." instance=ExtResource("1_08bli")]
+
+[node name="Main" parent="." instance=ExtResource("2_ybseo")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.633725, 7.56785, 8.75424)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kk4fx")
+}
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.6593, -6.82775)
+target_position = Vector3(0, 0, -1)
+debug_shape_custom_color = Color(0, 0.431373, 0.788235, 1)
+debug_shape_thickness = 5
+
+[node name="Grenade" parent="." instance=ExtResource("3_gkc7h")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0260141, 7.87464, 2.08964)
+visible = false

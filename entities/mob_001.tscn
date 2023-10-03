@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://nodoc1aaeapn"]
+
+[ext_resource type="PackedScene" uid="uid://olf5fybcmt7h" path="res://mob.glb" id="1_5s62r"]
+[ext_resource type="Script" path="res://entities/mob.gd" id="1_xdbf8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w06uf"]
+
+[node name="mob_001" type="Node3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_xdbf8")
+
+[node name="Body" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_w06uf")
+
+[node name="mob" parent="Body" instance=ExtResource("1_5s62r")]
