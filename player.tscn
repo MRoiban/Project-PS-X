@@ -12,20 +12,6 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_kw81a")
-bullet_count = null
-stock_count = null
-WALK_SPEED = null
-CROUCH_SPEED = null
-CROUCH_DEPTH = null
-SPRINT_SPEED = null
-JUMP_VELOCITY = null
-gravity = null
-SENSITIVITY_X = null
-SENSITIVITY_Y = null
-BOB_FREQUENCY = null
-BOB_AMPLITUDE = null
-BASE_FOV = null
-FOV_CHANGE = null
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visible = false

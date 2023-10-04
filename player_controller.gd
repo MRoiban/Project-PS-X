@@ -53,8 +53,10 @@ var t_BOB = 0.0
 @onready var grenade_model = $Neck/Head/Camera3D/Glock/Grenade
 @onready var glock_animation = $Neck/Head/Camera3D/Glock/AnimationPlayer
 @onready var glock_barrel = $Neck/Head/Camera3D/Glock/RayCast3D
-@onready var gun_stats_stock = $HUD/Gun_Stats/Stock
-@onready var gun_stats_bullets = $HUD/Gun_Stats/Bullets
+@onready var gun_stats_stock = $HUD/Weapon_Stats/Gun_Stats/Stock
+@onready var gun_stats_bullets = $HUD/Weapon_Stats/Gun_Stats/Bullets
+@onready var grenade_stats = $HUD/Weapon_Stats/Grenades
+@onready var gun_stats = $HUD/Weapon_Stats/Gun_Stats
 @onready var blood = $HUD/Blood
 # ------------------------------------------------------------------
 
@@ -67,8 +69,10 @@ var instance_grenade
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	gun_stats_bullets.text = str(bullet_count)
-	gun_stats_stock.text = str(stock_count)
+
+	gun_stats_bullets.text = str(bullet_count) if bullet_count >= 10 else "0" + str(bullet_count)
+	gun_stats_stock.text = str(stock_count) 
+	grenade_stats.text = str(grenade_count) if grenade_count >= 10 else "0" + str(grenade_count)
 
 
 func _unhandled_input(event):
@@ -120,6 +124,15 @@ func player_movement(time):
 	move_and_slide()
 
 
+func label_weapon():
+	if GRENADE:
+		grenade_stats.visible = true
+		gun_stats.visible = false
+	elif GUN:
+		grenade_stats.visible = false
+		gun_stats.visible = true
+
+
 func free_look():
 	if Input.is_action_pressed("free_look"):
 		free_looking = true
@@ -157,7 +170,11 @@ func grenade_throw():
 		GUN = false
 		gun_model.visible = false
 		grenade_model.visible = true
+	label_weapon()
 	reload_immersive()
+	grenade_stats.text = str(grenade_count) if grenade_count >= 10 else "0" + str(grenade_count)
+	if Input.is_action_just_pressed("shoot") and (grenade_count > 0):
+		grenade_count -= 1
 
 
 func shooting():
@@ -167,9 +184,11 @@ func shooting():
 		GRENADE = false
 		GUN = true
 
+	label_weapon()
 	reload_immersive()
-	gun_stats_bullets.text = str(bullet_count)
+	gun_stats_bullets.text = str(bullet_count) if bullet_count >= 10 else "0" + str(bullet_count)
 	gun_stats_stock.text = str(stock_count)
+
 	if Input.is_action_just_pressed("shoot") and (stock_count > 0 or bullet_count > 0):
 		if !glock_animation.is_playing():
 			glock_animation.play("shooting")
@@ -195,8 +214,7 @@ func reload_immersive():
 				stock_count -= 1
 				bullet_count = 10
 		elif GRENADE:
-			pass
-			
+			grenade_count = 10
 
 
 func direction_vector() -> Vector3:
