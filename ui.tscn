@@ -28,7 +28,7 @@ offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Gun_Stats" type="HBoxContainer" parent="."]
+[node name="Weapon_Stats" type="HBoxContainer" parent="."]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 2
@@ -40,30 +40,53 @@ offset_right = 167.0
 offset_bottom = -38.0
 grow_vertical = 0
 
-[node name="Stock" type="Label" parent="Gun_Stats"]
+[node name="Gun_Stats" type="Control" parent="Weapon_Stats"]
 layout_mode = 2
+
+[node name="Stock" type="Label" parent="Weapon_Stats/Gun_Stats"]
+layout_mode = 2
+offset_top = 3.0
+offset_right = 31.0
+offset_bottom = 69.0
 text = "0
 "
 label_settings = SubResource("LabelSettings_kxk4d")
 horizontal_alignment = 1
 metadata/_edit_lock_ = true
 
-[node name="Separator" type="Label" parent="Gun_Stats"]
+[node name="Separator" type="Label" parent="Weapon_Stats/Gun_Stats"]
 layout_mode = 2
+offset_left = 35.0
+offset_top = 3.0
+offset_right = 66.0
+offset_bottom = 69.0
 text = "  
 "
 label_settings = SubResource("LabelSettings_kxk4d")
 horizontal_alignment = 1
 metadata/_edit_lock_ = true
 
-[node name="Image139" type="Sprite2D" parent="Gun_Stats/Separator"]
+[node name="Image139" type="Sprite2D" parent="Weapon_Stats/Gun_Stats/Separator"]
 material = SubResource("CanvasItemMaterial_5ys6r")
 position = Vector2(15, 27)
 rotation = 1.5708
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_lyeo7")
 
-[node name="Bullets" type="Label" parent="Gun_Stats"]
+[node name="Bullets" type="Label" parent="Weapon_Stats/Gun_Stats"]
+layout_mode = 2
+offset_left = 70.0
+offset_top = 3.0
+offset_right = 132.0
+offset_bottom = 69.0
+text = "00
+"
+label_settings = SubResource("LabelSettings_kxk4d")
+horizontal_alignment = 2
+metadata/_edit_lock_ = true
+
+[node name="Grenades" type="Label" parent="Weapon_Stats"]
+visible = false
 layout_mode = 2
 text = "00
 "
