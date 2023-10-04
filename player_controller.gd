@@ -195,7 +195,7 @@ func reload_immersive():
 				stock_count -= 1
 				bullet_count = 10
 		elif GRENADE:
-
+			pass
 			
 
 
