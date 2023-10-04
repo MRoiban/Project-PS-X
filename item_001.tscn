@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://r20lc3hevjtn"]
 
-[ext_resource type="Script" path="res://Pickable_001.gd" id="1_42wqj"]
+[ext_resource type="Script" path="res://Scripts/Pickable_001.gd" id="1_42wqj"]
 [ext_resource type="PackedScene" uid="uid://cjd3sggjhevdp" path="res://Assets/ammo_box_remington_xleanbore_45_acp/scene.gltf" id="1_ng8pt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1gayh"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dw6ciidcrpv3b"]
 
-[ext_resource type="Script" path="res://physics_ball.gd" id="1_av418"]
+[ext_resource type="Script" path="res://Scripts/physics_ball.gd" id="1_av418"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dtflq"]
 transparency = 1

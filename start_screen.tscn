@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://f4w64qtnr4nn"]
 
-[ext_resource type="Script" path="res://start_screen.gd" id="1_m6s36"]
+[ext_resource type="Script" path="res://Scripts/start_screen.gd" id="1_m6s36"]
 [ext_resource type="Script" path="res://addons/GameGUI/GGHBox.gd" id="2_foeoi"]
 [ext_resource type="Script" path="res://addons/GameGUI/GGVBox.gd" id="3_du7q8"]
 [ext_resource type="Script" path="res://addons/GameGUI/GGLabel.gd" id="4_07sr3"]
