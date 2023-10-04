@@ -98,3 +98,17 @@ size = 5.0
 
 [node name="Player" parent="." instance=ExtResource("6_y301f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81481, 2.19189, -0.818829)
+bullet_count = null
+stock_count = null
+WALK_SPEED = null
+CROUCH_SPEED = null
+CROUCH_DEPTH = null
+SPRINT_SPEED = null
+JUMP_VELOCITY = null
+gravity = null
+SENSITIVITY_X = null
+SENSITIVITY_Y = null
+BOB_FREQUENCY = null
+BOB_AMPLITUDE = null
+BASE_FOV = null
+FOV_CHANGE = null
