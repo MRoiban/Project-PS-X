@@ -18,6 +18,7 @@ visible = false
 mesh = SubResource("CapsuleMesh_j4svq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.9, 0, 0, 0, 1, 0, 0, 0, 0.9, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_4phb2")
 
 [node name="Neck" type="Node3D" parent="."]

@@ -234,8 +234,14 @@ func reload_immersive():
 
 
 func direction_vector() -> Vector3:
-	var input_dir = Input.get_vector("ui_right", "ui_left", "ui_down", "ui_up")
-	var dir = -(transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var dir
+	if is_on_floor():	
+		var input_dir = Input.get_vector("ui_right", "ui_left", "ui_down", "ui_up")
+		dir = -(transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	else:
+		var input_dir = Input.get_vector("ui_right", "ui_left", "ui_down", "ui_up")
+		
+		dir = -(transform.basis * Vector3(input_dir.x, 0, input_dir.y if input_dir.y > 0 else 0)).normalized()
 	return dir
 
 
