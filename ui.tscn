@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d0ahr7hal8hq3"]
+[gd_scene load_steps=6 format=3 uid="uid://d0ahr7hal8hq3"]
 
 [ext_resource type="FontFile" uid="uid://curchivhtuiqb" path="res://fonts/firacode/iracode_regular.ttf" id="1_p2q20"]
 [ext_resource type="Texture2D" uid="uid://ptekm070smmn" path="res://Assets/ammo_box_remington_xleanbore_45_acp/image_139.png" id="2_lyeo7"]
@@ -9,9 +9,6 @@ font = ExtResource("1_p2q20")
 font_size = 50
 outline_size = 15
 outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5ys6r"]
-blend_mode = 1
 
 [sub_resource type="FontVariation" id="FontVariation_oe428"]
 base_font = ExtResource("1_p2q20")
@@ -67,7 +64,6 @@ horizontal_alignment = 1
 metadata/_edit_lock_ = true
 
 [node name="Image139" type="Sprite2D" parent="Weapon_Stats/Gun_Stats/Separator"]
-material = SubResource("CanvasItemMaterial_5ys6r")
 position = Vector2(15, 27)
 rotation = 1.5708
 scale = Vector2(0.1, 0.1)
