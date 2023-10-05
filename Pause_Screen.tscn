@@ -1,7 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://decp002er6wxp"]
+[gd_scene load_steps=9 format=3 uid="uid://decp002er6wxp"]
 
 [ext_resource type="Script" path="res://Pause_Screen.gd" id="1_jin3x"]
 [ext_resource type="Texture2D" uid="uid://d0cn2lp3iwec7" path="res://Assets/misc/Pause_Background.png" id="1_x1kqa"]
+[ext_resource type="FontFile" uid="uid://curchivhtuiqb" path="res://fonts/firacode/iracode_regular.ttf" id="3_tkch7"]
+
+[sub_resource type="FontVariation" id="FontVariation_8kh7l"]
+base_font = ExtResource("3_tkch7")
+
+[sub_resource type="FontVariation" id="FontVariation_jjj8n"]
+base_font = ExtResource("3_tkch7")
+
+[sub_resource type="FontVariation" id="FontVariation_ko0vi"]
+base_font = ExtResource("3_tkch7")
+
+[sub_resource type="FontVariation" id="FontVariation_fqtkd"]
+base_font = ExtResource("3_tkch7")
 
 [sub_resource type="LabelSettings" id="LabelSettings_xhgma"]
 
@@ -41,18 +54,26 @@ alignment = 1
 
 [node name="Resume" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_8kh7l")
+theme_override_font_sizes/font_size = 36
 text = "RESUME"
 
 [node name="Quit To Menu" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_jjj8n")
+theme_override_font_sizes/font_size = 36
 text = "QUIT TO MENU"
 
 [node name="Quit To Desktop" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_ko0vi")
+theme_override_font_sizes/font_size = 36
 text = "QUIT TO DESKTOP"
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_fqtkd")
+theme_override_font_sizes/font_size = 36
 text = "Work In Progress"
 label_settings = SubResource("LabelSettings_xhgma")
 horizontal_alignment = 1

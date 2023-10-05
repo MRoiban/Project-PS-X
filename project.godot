@@ -27,7 +27,7 @@ project/assembly_name="Protorype-Project-X"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/script-tabs/plugin.cfg", "res://addons/script_panel_plus/plugin.cfg", "res://addons/tbloader/plugin.cfg")
+enabled=PackedStringArray("res://addons/script-tabs/plugin.cfg", "res://addons/script_panel_plus/plugin.cfg", "res://addons/tbloader/plugin.cfg", "res://addons/ui_design_tool/plugin.cfg")
 
 [filesystem]
 
