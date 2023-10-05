@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ubebjoufha5s"]
+[gd_scene load_steps=8 format=3 uid="uid://ubebjoufha5s"]
 
 [ext_resource type="Script" path="res://Scripts/player_controller.gd" id="1_dk8q0"]
 [ext_resource type="PackedScene" uid="uid://y238lv7etlc2" path="res://glock.tscn" id="2_tjoui"]
 [ext_resource type="Script" path="res://Scripts/Interaction.gd" id="3_iissy"]
 [ext_resource type="PackedScene" uid="uid://d0ahr7hal8hq3" path="res://ui.tscn" id="4_rjmua"]
+[ext_resource type="PackedScene" uid="uid://decp002er6wxp" path="res://Pause_Screen.tscn" id="5_5vo4i"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j4svq"]
 
@@ -38,3 +39,5 @@ script = ExtResource("3_iissy")
 
 [node name="HUD" parent="." instance=ExtResource("4_rjmua")]
 mouse_filter = 2
+
+[node name="Pause Menu" parent="." instance=ExtResource("5_5vo4i")]

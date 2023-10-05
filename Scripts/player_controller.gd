@@ -47,7 +47,7 @@ var t_BOB = 0.0
 @onready var body = $"."
 @onready var head = $Neck/Head
 @onready var neck = $"Neck"
-@onready var camera = $Neck/Head/Camera3Dx
+@onready var camera = $Neck/Head/Camera3D
 @onready var hand = $Neck/Head/Camera3D/Glock
 @onready var gun_model = $Neck/Head/Camera3D/Glock/Model
 @onready var grenade_model = $Neck/Head/Camera3D/Glock/Grenade
@@ -58,6 +58,8 @@ var t_BOB = 0.0
 @onready var grenade_stats = $HUD/Weapon_Stats/Grenades
 @onready var gun_stats = $HUD/Weapon_Stats/Gun_Stats
 @onready var blood = $HUD/Blood
+@onready var pause = $"Pause Menu"
+@onready var hud = $HUD
 # ------------------------------------------------------------------
 
 var GLOBAL_TIME
@@ -73,7 +75,7 @@ func _ready():
 	gun_stats_bullets.text = str(bullet_count) if bullet_count >= 10 else "0" + str(bullet_count)
 	gun_stats_stock.text = str(stock_count) 
 	grenade_stats.text = str(grenade_count) if grenade_count >= 10 else "0" + str(grenade_count)
-
+	pause.visible = false
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -87,9 +89,6 @@ func _unhandled_input(event):
 	else:
 		head.rotation = lerp(head.rotation, Vector3(0, 0, 0), GLOBAL_TIME * 1.5)
 
-	if event is InputEventKey:
-		if event.get_physical_keycode_with_modifiers() == EXIT:
-			get_tree().quit()
 
 
 func _physics_process(delta):
@@ -108,6 +107,23 @@ func _physics_process(delta):
 	elif Input.is_physical_key_pressed(KEY_2):
 		GRENADE = true
 		GUN = false
+	
+	if Input.is_action_just_pressed("pause"):
+		var flag = false if pause.visible else true
+		pause.set_paused(true)
+		pause.visible = flag
+		hud.visible = not(flag)
+		get_tree().paused = flag
+		if flag:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	elif pause.is_unpaused():
+		pause.visible = false
+		hud.visible = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		pause.revert()
+		pause.set_paused(false)
 
 
 func player_movement(time):
