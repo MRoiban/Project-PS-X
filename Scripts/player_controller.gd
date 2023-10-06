@@ -49,6 +49,8 @@ var t_BOB = 0.0
 @onready var neck = $"Neck"
 @onready var camera = $Neck/Head/Camera3D
 @onready var hand = $Neck/Head/Camera3D/Glock
+@onready var hand_r1 = $Neck/Head/Camera3D/Glock/Main
+@onready var hand_r2 = $Neck/Head/Camera3D/Glock/Main2
 @onready var gun_model = $Neck/Head/Camera3D/Glock/Model
 @onready var grenade_model = $Neck/Head/Camera3D/Glock/Grenade
 @onready var glock_animation = $Neck/Head/Camera3D/Glock/AnimationPlayer
@@ -186,6 +188,9 @@ func grenade_throw():
 		GUN = false
 		gun_model.visible = false
 		grenade_model.visible = true
+		hand_r2.visible = true
+		hand_r1.visible = false
+
 	label_weapon()
 	reload_immersive()
 	grenade_stats.text = str(grenade_count) if grenade_count >= 10 else "0" + str(grenade_count)
@@ -197,6 +202,9 @@ func shooting():
 	if not gun_model.visible:
 		grenade_model.visible = false
 		gun_model.visible = true
+		hand_r2.visible = false
+		hand_r1.visible = true
+
 		GRENADE = false
 		GUN = true
 
